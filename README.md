@@ -22,12 +22,12 @@ rsc/pretrained_model/dataset_v4.h5
 
 ### 서버 실행
 
-```python
+```bash
 python -m src.bot
 ```
 
 ### 클라이언트 실행
 
-```python
+```bash
 python -m src.test.chatbot_client_test
 ```
