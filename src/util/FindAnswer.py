@@ -39,9 +39,12 @@ class FindAnswer:
 
     # 답변 검색
     def search(self, ner_predicts):
+        if 'WARD' in ner_predicts == False:
+            return None
         self.result = ner_predicts
         # 의도명, 개체명으로 답변 검색
         sql = self._make_query()
+        print(sql)
         answer = self.db.select_one(sql)
         # 검색되는 답변이 없으면 의도명만 검색
         if answer is None:
@@ -50,5 +53,6 @@ class FindAnswer:
                 self.result = {}
                 self.result['WARD'] = ward_name
             sql = self._make_query()
+            print(sql)
             answer = self.db.select_one(sql)
         return answer

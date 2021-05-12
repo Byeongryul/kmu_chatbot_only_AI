@@ -36,14 +36,16 @@ def to_client(conn, addr, params):
             else: ner_predicts[key] = ner_predicts[key] + value if key in ner_predicts else value
         #for k, v in temp.items(): ner_predicts.append((v, k)), ner_tags.append(k)
         print(ner_predicts)
+        
         # 답변 검색
         try:
             f = FindAnswer(db)
-            answer = f.search(ner_predicts)
+            url = f.search(ner_predicts)
+            if url == None:
+                url = 'http://' + DB_HOST + '/null/'
         except Exception as ex:
             print(ex)
-            answer.url = 'http://' + DB_HOST + '/null/'
-        
+            url = 'http://' + DB_HOST + '/null/'
         send_json_data_str = {
             "Query" : query,
             "Url": url
