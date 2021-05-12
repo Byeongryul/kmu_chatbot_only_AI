@@ -14,7 +14,7 @@
 
 ### 추가해야 하는 파일
 
-[설치 경로 _ 허가 필요](https://drive.google.com/drive/u/0/folders/1gkryw-G6YAIU6sgTsEJYgbSHuxTa27w0)
+[필요 파일 위치](https://drive.google.com/drive/u/0/folders/1gkryw-G6YAIU6sgTsEJYgbSHuxTa27w0)
 
 src/config/DatabaseConfig.py
 
