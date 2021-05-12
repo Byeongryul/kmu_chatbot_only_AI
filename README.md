@@ -11,4 +11,15 @@
 ```bash
 . exe/install.sh
 ```
-# kmu_chatbot_only_AI
+
+### 서버 실행
+
+```python
+python -m src.bot
+```
+
+### 클라이언트 실행
+
+```python
+python -m src.test.chatbot_client_test
+```
