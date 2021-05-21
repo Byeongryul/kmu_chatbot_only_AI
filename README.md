@@ -7,7 +7,7 @@
 ## 실행 방법
 
 ### 환경 설정
-
+<img src="https://img.shields.io/badge/python-A8B9CC?style=flat-square&logo=C&logoColor=white"/></a>&nbsp 
 ```bash
 . exe/install.sh
 ```
