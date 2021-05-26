@@ -24,7 +24,7 @@ class FindAnswer:
                         self.result[k] = self.datas[k]['1'][row]
                         break
                     else:
-                        self.result[k] = '?'
+                        self.result[k] = '장학금'
 
     # 검색 쿼리 생성
     def _make_query(self):
